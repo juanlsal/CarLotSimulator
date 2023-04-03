@@ -23,6 +23,8 @@ namespace CarLotSimulator
             
             foreach (var i in  CarLot.CarList)
             {
+                CarLot.numberOfCars++;
+                Console.WriteLine($"Cars entered: {CarLot.numberOfCars}");
                 Console.WriteLine($"the year is {i.Year}");
                 Console.WriteLine($"the make is {i.Make}");
                 Console.WriteLine($"the model is {i.Model}");
